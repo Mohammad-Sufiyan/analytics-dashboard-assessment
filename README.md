@@ -1,5 +1,12 @@
 # MapUp - Analytics Dashboard Assessment
 
+### Live URL Details
+
+URL: https://mohammad-sufiyan.github.io/analytics-dashboard-assessment/
+## LOGIN Details
+Username: ev@gmail.com
+Password: 123123
+**Note:** After Login wait for few seconds or minutes to load the UI(Graphs). Due to github pages 
 ## Overview
 
 The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills. Feel free to use any tech stack you want to create the dashboard.
