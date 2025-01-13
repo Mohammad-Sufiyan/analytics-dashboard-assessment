@@ -1,0 +1,203 @@
+/* Backside container css */
+.apexcharts-tooltip {
+  background-color: #4CAF50 !important; /* Change background color */
+  color: black !important; /* Change text color */
+  font-size: 14px !important; /* Change font size */
+}
+
+.page {
+  /* color: white; */
+  padding: 0 1rem;
+  background: #292929;
+  overflow-x: hidden ;
+}
+.box {
+  min-height: 120px;
+  background: black;
+  margin: 0 -1rem;
+  font-size: 36px;
+  
+}
+
+.text-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.axis-label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-right: 5px;
+}
+
+.x-axis,
+.y-axis {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.x-axis::before,
+.y-axis::before {
+  content: '►'; /* Adding a nice icon before text */
+  margin-right: 8px;
+  font-size: 16px;
+  color: #1a73e8; /* Change color to suit your theme */
+}
+
+.x-axis {
+  font-size: 15px;
+  color: #000;
+}
+
+.y-axis {
+  font-size: 15px;
+  color: #000;
+}
+
+.text-end .x-axis, .text-end .y-axis {
+  margin: 5px 0;
+}
+
+.text-end .x-axis span, .text-end .y-axis span {
+  color: #000;
+  font-weight: 700;
+}
+
+/* .content {
+  min-height: calc(200vh - 178px);
+  border-radius: 10px;
+  margin-top: -2rem;
+  background: #292929;
+  color: white !important;
+  font-size: 1rem;
+  line-height: normal;    
+  border-top: 1rem solid #dd3333;
+
+} */
+
+.data {
+  margin-top: 1rem;
+  margin: 1rem;
+
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  overflow-x: hidden;
+}
+
+/* ============================{{END}}=============================================== */
+/* Card displayed at dashboard Area   */
+mat-card {
+  width: 95%;
+  margin-bottom: 1rem;
+  /* color: white !important; */
+  padding: 0rem;
+}
+
+mat-card-header{
+  background-color: #333333;
+  color: white !important;
+}
+mat-card-subtitle{
+  color: white;
+}
+mat-card-actions{
+  /* color: white; */
+  background-color: #444444;
+}
+.cart-image {
+margin: 2.5rem 2rem;
+
+}
+
+.icon-display {
+  transform: scale(3);
+}
+
+.cart-text {
+ margin: 1rem 0rem;
+}
+
+.cart-title {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.cart-quantity {
+  margin-top: 0.5rem;
+
+}
+
+/* cart color */
+.cart-icon-orange {
+  color: #eb7130;
+}
+
+.cart-icon-sky {
+  color: #5ab6ae;
+}
+
+.cart-icon-green {
+  color: #b5cc18;
+}
+
+.cart-icon-violet {
+  color: #6b5bc9;
+}
+/* ==========================================Media  query============================================== */
+/* X-Small devices (portrait phones, less than 576px,mobile) */
+@media (max-width: 575.98px) {
+  /* .cart-image {
+    margin:0rem;
+    
+    }
+  .icon-display {
+    transform: scale(2);
+    margin: 0rem;
+  }
+  .cart-text{
+    margin:0rem 0.5rem;
+  } */
+
+}
+
+/* Small devices (landscape phones, less than 768px,ipad) */
+@media (max-width: 767.98px) {
+  /* .cart-image {
+    margin:0rem;
+    
+    }
+  .icon-display {
+    transform: scale(2);
+    margin: 0rem;
+  }
+  .cart-text{
+    margin:0rem 0.5rem;
+  } */
+
+
+}
+
+/* Medium devices (tablets, less than 992px,surface pro) */
+@media (max-width: 991.98px) {
+
+  /* .cart-image {
+    margin: 2.5rem 2rem;
+    
+    } */
+}
+
+/* // Large devices (desktops=my laptop, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* X-Large devices (large desktops bigger than my laptop, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* ==================================={{END}}================================================= */

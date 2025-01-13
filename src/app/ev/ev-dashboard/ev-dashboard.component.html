@@ -1,0 +1,79 @@
+
+
+<div class="container-fluid page">
+  <h1 class="d-flex box p-3 mt-2" style="color: white;">EV Analytics Dashboard</h1>
+  <div class="content shadow p-3 position-relative">
+    <div class="data">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>EV Popularity and Adoption</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <!-- Bar Chart -->
+                <h2 style="color: black;">Top 10 EV Makes and Models</h2>
+                <div class="text-end">
+                  <div class="x-axis">
+                    <span class="axis-label">X-AXIS:</span> makes and models
+                  </div>
+                  <div class="y-axis">
+                    <span class="axis-label">Y-AXIS:</span> Count
+                  </div>
+                </div>
+                <apx-chart *ngIf="makesModelsChartData.length" #maker [chart]="makesModelsChartOptions"
+                  [series]="makesModelsChartData" [xaxis]="{ categories: makesModelsCategories }"></apx-chart>
+
+                <!-- Line Chart -->
+                <h2 style="color: black;">Yearly EV Adoption Trend</h2>
+                <div class="text-end">
+                  <div class="x-axis">
+                    <span class="axis-label">X-AXIS:</span> Years
+                  </div>
+                  <div class="y-axis">
+                    <span class="axis-label">Y-AXIS:</span> Adoption Trends
+                  </div>
+                </div>
+                <apx-chart *ngIf="yearlyAdoptionChartData.length" #adopt [chart]="yearlyAdoptionChartOptions"
+                  [series]="yearlyAdoptionChartData" [xaxis]="{ categories: sortedYears }"></apx-chart>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-md-6">
+            <!-- Electric Range Distribution -->
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>Range and Performance Analysis</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <h2 style="color: black;">Electric Range Distribution</h2>
+                <div class="text-end">
+                  <div class="x-axis">
+                    <span class="axis-label">X-AXIS:</span> Electrice range per mile
+                  </div>
+                  <div class="y-axis">
+                    <span class="axis-label">Y-AXIS:</span> No of vehicles
+                  </div>
+                </div>
+                <apx-chart *ngIf="electricRangeChartData.length" [chart]="electricRangeChartOptions" [series]="electricRangeChartData"></apx-chart>
+                <h2 style="color: black;">Electric Range vs. Model Year</h2>
+                <div class="text-end">
+                  <div class="x-axis">
+                    <span class="axis-label">X-AXIS:</span> Model years
+                  </div>
+                  <div class="y-axis">
+                    <span class="axis-label">Y-AXIS:</span> Electrice range in miles
+                  </div>
+                </div>
+                <apx-chart *ngIf="electricRangeVsYearChartData.length" [chart]="electricRangeVsYearChartOptions" [series]="[{ data: electricRangeVsYearChartData }]"></apx-chart>
+
+              </mat-card-content>
+            </mat-card>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
