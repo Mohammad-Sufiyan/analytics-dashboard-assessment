@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "courseflixs": {
+    "ev-analytics": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/courseflixs/browser",
+            "outputPath": "dist/ev-analytics/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "courseflixs:build:production"
+              "browserTarget": "ev-analytics:build:production"
             },
             "development": {
-              "browserTarget": "courseflixs:build:development"
+              "browserTarget": "ev-analytics:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "courseflixs:build"
+            "browserTarget": "ev-analytics:build"
             
           }
         },
@@ -112,7 +112,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/courseflixs/server",
+            "outputPath": "dist/ev-analytics/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -134,12 +134,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "courseflixs:build:development",
-              "serverTarget": "courseflixs:server:development"
+              "browserTarget": "ev-analytics:build:development",
+              "serverTarget": "ev-analytics:server:development"
             },
             "production": {
-              "browserTarget": "courseflixs:build:production",
-              "serverTarget": "courseflixs:server:production"
+              "browserTarget": "ev-analytics:build:production",
+              "serverTarget": "ev-analytics:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -153,12 +153,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "courseflixs:build:production",
-              "serverTarget": "courseflixs:server:production"
+              "browserTarget": "ev-analytics:build:production",
+              "serverTarget": "ev-analytics:server:production"
             },
             "development": {
-              "browserTarget": "courseflixs:build:development",
-              "serverTarget": "courseflixs:server:development"
+              "browserTarget": "ev-analytics:build:development",
+              "serverTarget": "ev-analytics:server:development"
             }
           },
           "defaultConfiguration": "production"

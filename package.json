@@ -1,5 +1,5 @@
 {
-  "name": "courseflixs",
+  "name": "ev-analytics",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run courseflixs:serve-ssr",
-    "serve:ssr": "node dist/courseflixs/server/main.js",
-    "build:ssr": "ng build && ng run courseflixs:server",
-    "prerender": "ng run courseflixs:prerender"
+    "dev:ssr": "ng run ev-analytics:serve-ssr",
+    "serve:ssr": "node dist/ev-analytics/server/main.js",
+    "build:ssr": "ng build && ng run ev-analytics:server",
+    "prerender": "ng run ev-analytics:prerender"
   },
   "private": true,
   "dependencies": {
@@ -67,6 +67,7 @@
     "@types/jquery": "^3.5.16",
     "@types/node": "^14.15.0",
     "@types/papaparse": "^5.3.15",
+    "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
